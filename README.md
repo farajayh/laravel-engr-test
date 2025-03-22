@@ -12,7 +12,7 @@ Same way you would install a typical laravel application.
     npm run dev
 
     copy .env.example to .env
-    
+
     php artisan key:generate
 
     php arisan migrate
@@ -23,6 +23,7 @@ Same way you would install a typical laravel application.
 
     php artisan queue:work
 
+    Database name: curacel
     Tests:
         php artisan test --filter BatchClaimServiceTest
         php artisan test --filter ClaimsTest
