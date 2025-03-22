@@ -15,15 +15,14 @@ Same way you would install a typical laravel application.
 
     php artisan key:generate
 
-    php arisan migrate
+    php artisan migrate
 
-    php artisan db:seed
+    php artisan db:seed --class InsurerSeeder 
 
     php artisan serve
 
     php artisan queue:work
 
-    Database name: curacel
     Tests:
         php artisan test --filter BatchClaimServiceTest
         php artisan test --filter ClaimsTest
