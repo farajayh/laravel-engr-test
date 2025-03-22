@@ -11,6 +11,8 @@ Same way you would install a typical laravel application.
 
     npm run dev
 
+    copy .env.example to .env
+    
     php artisan key:generate
 
     php arisan migrate
