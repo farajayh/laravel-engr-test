@@ -10,4 +10,9 @@ class Insurer extends Model
     use HasFactory;
 
     protected $table = 'insurers';
+
+    public function claims()
+    {
+        return $this->hasMany(Claim::class, 'insurer_code', 'code');
+    }
 } 

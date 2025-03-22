@@ -10,4 +10,9 @@ class Claim extends Model
     use HasFactory;
 
     protected $table = 'claims';
+
+    public function insurer()
+    {
+        return $this->belongsTo(Insurer::class, 'insurer_code', 'code');
+    }
 } 
